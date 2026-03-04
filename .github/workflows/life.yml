@@ -25,7 +25,7 @@ jobs:
 
       - name: Run Game of Life updater
         env:
-          ACCESS_TOKEN: ${{ secrets.LIFE_ACCESS_TOKEN }}
+          ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
           TARGET_REPO: ${{ vars.TARGET_REPO }}
           DEFAULT_BRANCH: ${{ vars.DEFAULT_BRANCH }}
           AUTHOR_NAME: ${{ vars.AUTHOR_NAME }}
