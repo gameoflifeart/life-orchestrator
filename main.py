@@ -26,7 +26,7 @@ def _get_int_env(name: str, default: int) -> int:
 
 
 def main() -> None:
-    github_token = _require_env("GITHUB_TOKEN")
+    github_token = _require_env("ACCESS_TOKEN")
     repo_slug = _require_env("TARGET_REPO")
     default_branch = os.getenv("DEFAULT_BRANCH", "main")
 

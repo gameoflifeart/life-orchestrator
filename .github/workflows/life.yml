@@ -25,7 +25,7 @@ jobs:
 
       - name: Run Game of Life updater
         env:
-          GITHUB_TOKEN: ${{ secrets.LIFE_GITHUB_TOKEN }}
+          ACCESS_TOKEN: ${{ secrets.LIFE_ACCESS_TOKEN }}
           TARGET_REPO: ${{ vars.TARGET_REPO }}
           DEFAULT_BRANCH: ${{ vars.DEFAULT_BRANCH }}
           AUTHOR_NAME: ${{ vars.AUTHOR_NAME }}
@@ -34,7 +34,7 @@ jobs:
 
       - name: Commit updated state
         env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
           AUTHOR_NAME: ${{ vars.AUTHOR_NAME }}
           AUTHOR_EMAIL: ${{ vars.AUTHOR_EMAIL }}
         run: |

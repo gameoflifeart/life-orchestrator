@@ -26,7 +26,7 @@ Each scheduled run:
 
 The updater is driven entirely by environment variables:
 
-- `GITHUB_TOKEN` – PAT with at least `repo` scope for the target repo and
+- `ACCESS_TOKEN` – PAT with at least `repo` scope for the target repo and
   GraphQL access.
 - `TARGET_USERNAME` – GitHub username whose contribution graph is used as the
   Game of Life board.
@@ -47,7 +47,7 @@ orchestrator repository.
    - Access to the target repository (fine-grained or classic `repo` scope).
 2. Add secrets and variables to this repository:
    - Secrets:
-     - `LIFE_GITHUB_TOKEN` – the PAT created above.
+     - `LIFE_ACCESS_TOKEN` – the PAT created above.
      - `CONFIRM_FORCE_PUSH` – set to `1` once you are sure about the setup.
    - Repository variables:
      - `TARGET_USERNAME` – your GitHub username.
